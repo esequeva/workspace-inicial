@@ -12,7 +12,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const isLoggedIn = localStorage.getItem('isLoggedIn');
-  
+
       if (!isLoggedIn && window.location.href.indexOf('login.html') === -1) {
         // Usuario no ha iniciado sesión y no está en la página de login, redirige a login.html
         window.location.href = 'login.html';
@@ -41,25 +41,9 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
-          </li>
-
-          <div class="menuDesplegable">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-             Login
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Mi carrito</button></li>
-              <li><button class="dropdown-item" type="button">Mi perfil</button></li>
-              <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
-            </ul>
-          </div>
-
-
-
-          
+          </li>         
         </ul>
       </div>
     </div>
